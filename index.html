@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Personal data form</h1>
+        <p id="description">To sign in you must enter your personal data</p>
+        <form id="survey-form">
+            <div class="form-item">
+                <label id="name-label"  for="name">Name</label>
+                <input id="name" type="text" class="input-item" placeholder="Enter your name" required>
+            </div>
+            <div class="form-item">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="input-item" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-item">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" class="input-item" min="10" max="99" type="number" placeholder="Age">
+            </div>
+            <div class="form-item">
+                <p>Choose your role</p>
+                <select name="role" id="dropdown" class="selection-item">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>
+                    <input type="radio" name="sex" value="women" class="radio-input" checked>
+                    Women
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="man" class="radio-input">
+                    Man
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="other" class="radio-input">
+                    Other
+                </label>
+            </div>
+            <div class="form-item">
+                <p>Choose subjects wich you want study</p>
+                <label>
+                    <input type="checkbox" name="subjects" value="math" class="checkbox-input" checked>
+                    Math
+                </label>
+                <label>
+                    <input type="checkbox" name="subjects" value="english" class="checkbox-input">
+                    English
+                </label>
+                <label>
+                    <input type="checkbox" name="subjects" value="ukrainian" class="checkbox-input">
+                    Ukrainian
+                </label>
+                <label>
+                    <input type="checkbox" name="subjects" value="physics" class="checkbox-input">
+                    Physics
+                </label>
+                <label>
+                    <input type="checkbox" name="subjects" value="chemistry" class="checkbox-input">
+                    Chemistry
+                </label>
+            </div>
+            <div class="form-item">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" id="comment-area" placeholder="Enter your comment..."></textarea>
+            </div>
+            <div class="form-item">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
